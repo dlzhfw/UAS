@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uas_2021130034.FXML_PembayaranController">
+   <children>
+      <Text layoutX="69.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Bayar" />
+      <Text layoutX="69.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NISN" />
+      <Text layoutX="66.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id Pegawai" />
+      <Text layoutX="66.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Bayar" />
+      <Text layoutX="66.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status Pembayaran" />
+      <Text layoutX="69.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tagihan" />
+      <Text layoutX="69.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumlah Dibayar" />
+      <TextField fx:id="txtnobayar" layoutX="240.0" layoutY="168.0" />
+      <TextField fx:id="txtnisn" layoutX="240.0" layoutY="222.0" />
+      <TextField fx:id="txtidpegawai" layoutX="239.0" layoutY="100.0" />
+      <TextField fx:id="txttagihan" layoutX="239.0" layoutY="283.0" />
+      <TextField fx:id="txtjmlbayar" layoutX="239.0" layoutY="339.0" />
+      <TextField fx:id="txtstatbayar" layoutX="239.0" layoutY="475.0" />
+      <DatePicker fx:id="dtptglbayar" layoutX="240.0" layoutY="44.0" />
+      <Button fx:id="btnhapus" layoutX="67.0" layoutY="401.0" mnemonicParsing="false" onAction="#hapusklik" text="Hapus" />
+      <Button fx:id="btntambah" layoutX="164.0" layoutY="401.0" mnemonicParsing="false" onAction="#tambahklik" text="Tambah" />
+      <Button fx:id="btnclear" layoutX="274.0" layoutY="401.0" mnemonicParsing="false" onAction="#clearklik" text="Clear" />
+      <TableView fx:id="tbvdetil" layoutX="502.0" layoutY="125.0" prefHeight="200.0" prefWidth="292.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnbatal" layoutX="616.0" layoutY="475.0" mnemonicParsing="false" onAction="#batalklik" text="Batal" />
+      <Button fx:id="btnsimpan" layoutX="694.0" layoutY="475.0" mnemonicParsing="false" onAction="#simpanklik" text="Simpan" />
+   </children>
+</AnchorPane>

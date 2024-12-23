@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uas_2021130034.FXML_InputPendaftaranController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="61.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT DAFTAR" />
+            <Text layoutX="48.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NISN" />
+            <Text layoutX="48.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAMA" />
+            <Text layoutX="48.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TANGGAL LAHIR" />
+            <Text layoutX="48.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALAMAT" />
+            <Text layoutX="48.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JENIS KELAMIN" />
+            <Text layoutX="48.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEKOLAH ASAL" />
+            <Text layoutX="49.0" layoutY="565.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS SISWA" />
+            <TextField fx:id="txtnisn" layoutX="216.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="224.0" />
+            <TextField fx:id="txtnama" layoutX="216.0" layoutY="268.0" />
+            <TextField fx:id="txtalamat" layoutX="216.0" layoutY="379.0" />
+            <TextField fx:id="txtasal" layoutX="216.0" layoutY="485.0" />
+            <TextField fx:id="txtstatsiswa" layoutX="216.0" layoutY="539.0" />
+            <DatePicker fx:id="dtptgllahir" layoutX="215.0" layoutY="324.0" prefHeight="39.0" prefWidth="224.0" />
+            <RadioButton fx:id="rbl" layoutX="215.0" layoutY="437.0" mnemonicParsing="false" text="Laki-Laki">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tggender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbp" layoutX="337.0" layoutY="437.0" mnemonicParsing="false" text="Perempuan" toggleGroup="$tggender" />
+            <Button fx:id="btnkeluar" layoutX="751.0" layoutY="16.0" mnemonicParsing="false" onAction="#keluarklik" text="X" />
+            <Button fx:id="btnsimpan" layoutX="659.0" layoutY="632.0" mnemonicParsing="false" onAction="#simpanklik" text="Simpan" />
+            <Button fx:id="btnbatal" layoutX="568.0" layoutY="632.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="39.0" prefWidth="75.0" text="Batal" />
+            <Text layoutX="341.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TANGGAL DAFTAR" />
+            <DatePicker fx:id="dtptgldaftar" layoutX="508.0" layoutY="25.0" prefHeight="39.0" prefWidth="224.0" />
+            <Text layoutX="49.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PEGAWAI" />
+            <TextField fx:id="txtidpegawai" layoutX="217.0" layoutY="163.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="224.0" />
+            <TableView fx:id="tbvscore" layoutX="468.0" layoutY="187.0" prefHeight="245.0" prefWidth="290.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtidmapel" layoutX="215.0" layoutY="652.0" onAction="#txtmapel" prefHeight="39.0" prefWidth="133.0" />
+            <Button fx:id="btnpilih" layoutX="366.0" layoutY="652.0" mnemonicParsing="false" onAction="#plihmapel" prefHeight="39.0" prefWidth="75.0" text="Pilih" />
+            <Text layoutX="49.0" layoutY="678.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MATA PELAJARAN" />
+            <Text layoutX="49.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NO DAFTAR" />
+            <TextField fx:id="txtnodaftar" layoutX="215.0" layoutY="118.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="224.0" />
+            <Button fx:id="btntambah" layoutX="48.0" layoutY="691.0" mnemonicParsing="false" onAction="#tambahklik" text="Tambah" />
+            <Button fx:id="btnhapus" layoutX="162.0" layoutY="691.0" mnemonicParsing="false" onAction="#hapusklik" text="Hapus" />
+            <Text layoutX="481.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nilai" />
+            <TextField fx:id="txtnilai" layoutX="531.0" layoutY="485.0" />
+            <Button fx:id="txtclear" layoutX="253.0" layoutY="691.0" mnemonicParsing="false" onAction="#clearklik" text="Clear" />
+            <TextField fx:id="txtscore" layoutX="514.0" layoutY="539.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

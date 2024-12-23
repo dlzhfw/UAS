@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="uas_2021130034.FXML_InputSiswaController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="346.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT SISWA" />
+            <Text layoutX="182.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NISN" />
+            <Text layoutX="182.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAMA" />
+            <Text layoutX="182.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TANGGAL LAHIR" />
+            <Text layoutX="182.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALAMAT" />
+            <Text layoutX="182.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JENIS KELAMIN" />
+            <Text layoutX="182.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEKOLAH ASAL" />
+            <Text layoutX="183.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS SISWA" />
+            <TextField fx:id="txtnisn" layoutX="350.0" layoutY="109.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="224.0" />
+            <TextField fx:id="txtnama" layoutX="350.0" layoutY="167.0" />
+            <TextField fx:id="txtalamat" layoutX="350.0" layoutY="278.0" />
+            <TextField fx:id="txtasal" layoutX="350.0" layoutY="384.0" />
+            <TextField fx:id="txtstatsiswa" layoutX="350.0" layoutY="438.0" />
+            <DatePicker fx:id="dtptgllahir" layoutX="349.0" layoutY="223.0" prefHeight="39.0" prefWidth="224.0" />
+            <RadioButton fx:id="rbl" layoutX="349.0" layoutY="336.0" mnemonicParsing="false" text="Laki-Laki">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tggender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbp" layoutX="471.0" layoutY="336.0" mnemonicParsing="false" text="Perempuan" toggleGroup="$tggender" />
+            <Button fx:id="btnkeluar" layoutX="751.0" layoutY="16.0" mnemonicParsing="false" onAction="#keluarklik" text="X" />
+            <Button fx:id="btnsimpan" layoutX="491.0" layoutY="521.0" mnemonicParsing="false" onAction="#simpanklik" text="Simpan" />
+            <Button fx:id="btnbatal" layoutX="400.0" layoutY="521.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="39.0" prefWidth="75.0" text="Batal" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

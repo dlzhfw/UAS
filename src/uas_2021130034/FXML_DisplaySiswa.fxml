@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="uas_2021130034.FXML_DisplaySiswaController">
+   <children>
+      <AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="349.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA SISWA" />
+            <TableView fx:id="tbvsiswa" layoutX="36.0" layoutY="129.0" prefHeight="399.0" prefWidth="729.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnkeluar" layoutX="749.0" layoutY="14.0" mnemonicParsing="false" onAction="#keluarklik" prefHeight="27.0" prefWidth="33.0" text="x" />
+            <Button fx:id="btntambah" layoutX="662.0" layoutY="79.0" mnemonicParsing="false" onAction="#tambahklik" prefHeight="39.0" prefWidth="103.0" text="Tambah" />
+            <Button fx:id="btnedit" layoutX="36.0" layoutY="539.0" mnemonicParsing="false" onAction="#editklik" prefHeight="39.0" prefWidth="103.0" text="Edit" />
+            <Button fx:id="btnhapus" layoutX="146.0" layoutY="539.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="39.0" prefWidth="103.0" text="Hapus" />
+            <Button fx:id="btnawal" layoutX="516.0" layoutY="539.0" mnemonicParsing="false" onAction="#awalklik" prefHeight="39.0" prefWidth="54.0" text="&lt;&lt;" />
+            <Button fx:id="btnsebelum" layoutX="580.0" layoutY="539.0" mnemonicParsing="false" onAction="#sebelumklik" prefHeight="39.0" prefWidth="54.0" text="&lt;" />
+            <Button fx:id="btnsetelah" layoutX="643.0" layoutY="539.0" mnemonicParsing="false" onAction="#setelahklik" prefHeight="39.0" prefWidth="54.0" text="&gt;" />
+            <Button fx:id="btnakhir" layoutX="709.0" layoutY="539.0" mnemonicParsing="false" onAction="#akhirklik" prefHeight="39.0" prefWidth="54.0" text="&gt;&gt;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

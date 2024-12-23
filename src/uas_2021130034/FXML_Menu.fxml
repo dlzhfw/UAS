@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uas_2021130034.FXML_MenuController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+                <children>
+                    <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+                  <MenuBar layoutX="27.0" layoutY="30.0" prefHeight="39.0" prefWidth="547.0">
+                    <menus>
+                      <Menu fx:id="mnkelola" mnemonicParsing="false" onAction="#kelolaklik" text="Lihat Data">
+                        <items>
+                          <MenuItem fx:id="klsiswa" mnemonicParsing="false" onAction="#siswaklik" text="Siswa" />
+                              <MenuItem fx:id="klpegawai" mnemonicParsing="false" onAction="#pegawaiklik" text="Pegawai" />
+                        </items>
+                      </Menu>
+                      <Menu fx:id="mndaftar" mnemonicParsing="false" onAction="#daftarklik" text="Pendaftaran">
+                        <items>
+                          <MenuItem fx:id="dfdaftar" mnemonicParsing="false" onAction="#daftarklik" text="Daftar" />
+                              <MenuItem fx:id="dfdatadaftar" mnemonicParsing="false" onAction="#datadaftarklik" text="Data Pendaftar" />
+                        </items>
+                      </Menu>
+                      <Menu fx:id="mnbayar" mnemonicParsing="false" text="Pembayaran">
+                        <items>
+                          <MenuItem fx:id="bybayar" mnemonicParsing="false" onAction="#bayarklik" text="Input Pembayaran" />
+                              <MenuItem fx:id="bydatabayar" mnemonicParsing="false" onAction="#databayarklik" text="Data Pembayaran" />
+                        </items>
+                      </Menu>
+                        <Menu fx:id="mnlap" mnemonicParsing="false" text="Laporan">
+                           <items>
+                              <MenuItem fx:id="lapsiswa" mnemonicParsing="false" onAction="#lapsiswaklik" text="Laporan Siswa" />
+                              <MenuItem fx:id="lapbayar" mnemonicParsing="false" onAction="#lapbayarklik" text="Laporann Pembayaran" />
+                           </items>
+                        </Menu>
+                    </menus>
+                  </MenuBar>
+                </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

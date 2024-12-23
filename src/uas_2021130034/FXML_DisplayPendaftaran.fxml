@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uas_2021130034.FXML_DisplayPendaftaranController">
+   <children>
+      <TableView fx:id="tbvdaftar" layoutX="115.0" layoutY="100.0" prefHeight="200.0" prefWidth="570.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tbvscore" layoutX="115.0" layoutY="313.0" prefHeight="253.0" prefWidth="570.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnkeluar" layoutX="741.0" layoutY="23.0" mnemonicParsing="false" onAction="#keluarklik" text="X" />
+      <Button fx:id="btntambah" layoutX="596.0" layoutY="54.0" mnemonicParsing="false" onAction="#tambahklik" text="Tambah" />
+      <Button fx:id="btnhapus" layoutX="514.0" layoutY="54.0" mnemonicParsing="false" onAction="#hapusklik" text="Hapus" />
+      <Button fx:id="btnedit" layoutX="447.0" layoutY="54.0" mnemonicParsing="false" onAction="#editklik" text="Edit" />
+   </children>
+</AnchorPane>

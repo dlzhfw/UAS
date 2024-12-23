@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="uas_2021130034.FXML_PilihTagihanController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ComboBox fx:id="cmbfield" layoutX="36.0" layoutY="14.0" prefWidth="150.0" />
+            <TextField fx:id="txtisi" layoutX="202.0" layoutY="14.0" />
+            <Button fx:id="btncari" layoutX="442.0" layoutY="14.0" mnemonicParsing="false" onAction="#cariklik" text="Cari" />
+            <Button fx:id="btnpilih" layoutX="516.0" layoutY="14.0" mnemonicParsing="false" onAction="#pilihklik" text="Pilih" />
+            <Button fx:id="btnbatal" layoutX="592.0" layoutY="14.0" mnemonicParsing="false" onAction="#batalklik" text="Batal" />
+            <Button fx:id="btnkeluar" layoutX="744.0" layoutY="14.0" mnemonicParsing="false" onAction="#keluarklik" text="X" />
+            <TableView fx:id="tbvtagihan" layoutX="36.0" layoutY="83.0" prefHeight="414.0" prefWidth="729.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnawal" layoutX="289.0" layoutY="522.0" mnemonicParsing="false" onAction="#awalklik" text="&lt;&lt;" />
+            <Button fx:id="btnsebelum" layoutX="352.0" layoutY="522.0" mnemonicParsing="false" onAction="#sebelumklik" text="&lt;" />
+            <Button fx:id="btnsesudah" layoutX="412.0" layoutY="522.0" mnemonicParsing="false" onAction="#sesudahklik" text="&gt;" />
+            <Button fx:id="btnakhir" layoutX="463.0" layoutY="522.0" mnemonicParsing="false" onAction="#akhirklik" text="&gt;&gt;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

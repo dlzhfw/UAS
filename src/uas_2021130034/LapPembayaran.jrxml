@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="35ce4325-9839-4eda-87d8-e4d6ba01d91c">
+	<property name="ireport.zoom" value="1.0000000000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from pembayaran p inner join detil_bayar d on p.no_bayar=d.no_bayar
+inner join siswa s on s.nisn=p.nisn
+inner join tagihan t on t.id_tagihan=d.id_tagihan]]>
+	</queryString>
+	<field name="no_bayar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nisn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_pegawai" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_bayar" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status_bayar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_tagihan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jml_bayar" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_lahir" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sekolah_asal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status_siswa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_tagihan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="nisn_1" class="java.lang.Integer" resetType="Column" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{nisn}]]></variableExpression>
+	</variable>
+	<variable name="total" class="java.lang.String" calculation="Sum"/>
+	<variable name="variable2" class="java.lang.String"/>
+	<group name="bayar">
+		<groupExpression><![CDATA[$F{no_bayar}]]></groupExpression>
+		<groupHeader>
+			<band height="156">
+				<textField>
+					<reportElement x="114" y="14" width="100" height="20" uuid="3708bb17-b764-4519-8d9b-352487da93ce"/>
+					<textFieldExpression><![CDATA[$F{no_bayar}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="114" y="44" width="100" height="20" uuid="3d899866-466b-43c9-b697-be16478fa179"/>
+					<textFieldExpression><![CDATA[$F{nisn}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="114" y="70" width="100" height="20" uuid="2c10be76-b097-49ec-8050-3c795fb29885"/>
+					<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="405" y="14" width="100" height="20" uuid="2e76cf0c-504d-4c50-a2a1-d0fb795bbb86"/>
+					<textFieldExpression><![CDATA[$F{tgl_bayar}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="14" y="128" width="100" height="20" uuid="25a0a642-b992-4968-930a-8a7d779fac80"/>
+					<text><![CDATA[id_tagihan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="133" y="128" width="100" height="20" uuid="a2900828-e509-458c-bb52-0892a27797d6"/>
+					<text><![CDATA[nama_tagihan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="12" width="100" height="20" uuid="2a4d4b18-b4a5-41ba-8ab5-0da8d6cb9a55"/>
+					<text><![CDATA[No. Pembayaran :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="44" width="100" height="20" uuid="0f32f72f-e158-46e0-acd7-f949eac5fd53"/>
+					<text><![CDATA[NISN :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="70" width="100" height="20" uuid="92305106-325f-47c3-bb56-e24ec9c82b71"/>
+					<text><![CDATA[Nama :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="294" y="14" width="111" height="20" uuid="0010af39-f15e-47cc-aded-b38897f8df4a"/>
+					<text><![CDATA[Tanggal Pembayaran :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="488" y="282" width="0" height="0" uuid="2ba7d358-3bae-4e47-b51b-d56f1ad54011"/>
+					<textFieldExpression><![CDATA[]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="241" y="128" width="100" height="20" uuid="643e940a-0905-4a18-9aaf-b5de47de8113"/>
+					<text><![CDATA[jumlah]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="352" y="128" width="100" height="20" uuid="01fb651e-0170-4f52-843b-0aec3cd4d183"/>
+					<text><![CDATA[jml_bayar]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="15" width="341" height="43" uuid="6b4658a2-e157-49b9-b31f-f98066e76064"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PEMBAYARAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="7" width="100" height="20" uuid="228e95bb-5c44-4304-8126-0aa95ed3398e"/>
+				<textFieldExpression><![CDATA[$F{id_tagihan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="7" width="100" height="20" uuid="5168dc3e-f44b-41bb-9529-78cea07838da"/>
+				<textFieldExpression><![CDATA[$F{nama_tagihan}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="14" y="0" width="411" height="1" uuid="613cf543-dffe-4dc8-a0cd-5053e6aacf3c"/>
+			</line>
+			<textField>
+				<reportElement x="241" y="7" width="100" height="20" uuid="632bda48-e980-4c47-a4b6-f6f1b6c4c536"/>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="352" y="7" width="100" height="20" uuid="6607c4d4-ae39-4f11-8678-6389fb64b8a1"/>
+				<textFieldExpression><![CDATA[$F{jml_bayar}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="352" y="0" width="100" height="20" uuid="e0c11649-7146-40e1-947c-0524c2c09d47"/>
+				<textFieldExpression><![CDATA[$V{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
