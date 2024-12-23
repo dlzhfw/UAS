@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/DBScore.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/ModelPegawai.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/DBSiswa.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_InputSiswaController.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/DBTagihan.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_InputPendaftaran.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_DisplayPembayaran.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_Pembayaran.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_InputSiswa.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_InputPendaftaranController.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/ModelBayar.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/tree1.png</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/DBDaftar.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/ModelSiswa.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_PilihMapelController.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_PilihTagihanController.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_MenuController.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_DisplayPendaftaranController.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/DBDetilBayar.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_PembayaranController.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/DBBayar.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/ModelTagihan.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_DisplaySiswaController.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_PilihSiswa.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/ModelScore.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_DisplaySiswa.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/ModelMapel.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_PilihTagihan.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_DisplayPembayaranController.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/DBMapel.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/LapSiswa.jrxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/UAS_2021130034.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/DBPegawai.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/LapPembayaran.jrxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_DisplayPendaftaran.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_Menu.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/FXML_PilihMapel.fxml</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/ModelDetilBayar.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/ModelDaftar.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/UAS_2021130034/src/uas_2021130034/Koneksi.java</file>
+        </group>
+    </open-files>
+</project-private>
